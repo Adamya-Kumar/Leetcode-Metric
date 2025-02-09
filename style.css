@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --progress-degree:0;
+}
+body {
+    height: 100vh;
+    font-family: "Oswald", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    ;
+}
+
+.heading {
+    font-size: 3rem;
+}
+
+.container {
+    border-radius: 20px;
+    display: flex;
+    background-color: rgba(168, 168, 168, 0.515);
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    padding: 2rem;
+}
+
+.user-container {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.user-input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#user-input {
+    padding: 1rem;
+    width: 80%;
+    border-radius: 6px;
+    border: none;
+
+}
+
+#search-btn {
+    padding: 1rem;
+    width: 20%;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(0, 0, 255, 0.672);
+    color: white;
+    font-weight: bolder;
+}
+.circle {
+    border: 5px solid green;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    font-weight: 800;
+    background: conic-gradient(#299f5d var(--progress-degree, 0%), #283a2e 0%);
+    flex-direction: column;
+}
+
+.circle span{
+    position: relative;
+    z-index: 2;
+}
+.progress{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+#stats-card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1rem;
+    margin-top:1rem;
+}
+.card{
+    font-size: 0.8rem;
+    border: 2px solid grey;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+    color:black;
+}
+.card p{
+    color:red;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
